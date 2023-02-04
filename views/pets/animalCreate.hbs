@@ -1,0 +1,144 @@
+{{! this page renders a form to create one animal profile }}
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="container">
+    {{! Page Title }}
+    <div class="row">
+      <h1>Create a new animal profile</h1>
+      <hr />
+    </div>
+
+    {{!One animal profile }}
+    <form
+      action="/pets/animalCreate"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <div class="row">
+        {{! img col }}
+        <div class="col card d-flex justify-content-center align-items-center">
+          <label class="form-label" for="animalImage">
+            Upload animal picture here</label>
+          <input
+            type="file"
+            id="animalImage"
+            style="width: 400px;"
+            name="animalImage"
+          />
+
+        </div>
+
+        {{! description col }}
+        <div class="col card bg-light">
+          <div class="row mt-5 ms-3">
+
+            {{! Animal Name }}
+            <ul class="list-inline">
+              <li class="list-inline-item" style="width: 150px">
+                <p><u>Animal Name:</u></p>
+              </li>
+              <li class="list-inline-item">
+                <input
+                  type="text"
+                  class="form-control border border-secondary"
+                  placeholder=""
+                  name="animalName"
+                  style="width: 300px"
+                />
+              </li>
+            </ul>
+
+            {{!  Animal Type }}
+            <ul class="list-inline">
+              <li class="list-inline-item" style="width: 150px">
+                <p><u>Animal Type:</u></p>
+              </li>
+              <li class="list-inline-item">
+                <input
+                  type="text"
+                  class="form-control border border-secondary"
+                  placeholder=""
+                  name="animalType"
+                  style="width: 300px"
+                />
+              </li>
+            </ul>
+
+            {{! Animal Gender}}
+            <ul class="list-inline">
+              <li class="list-inline-item" style="width: 150px">
+                <p><u>Animal Gender:</u></p>
+              </li>
+              <li class="list-inline-item">
+                <input
+                  type="text"
+                  class="form-control border border-secondary"
+                  placeholder=""
+                  name="animalGender"
+                  style="width: 300px"
+                />
+              </li>
+            </ul>
+
+            {{! Animal Age }}
+            <ul class="list-inline">
+              <li class="list-inline-item" style="width: 150px">
+                <p><u>Animal Age:</u></p>
+              </li>
+              <li class="list-inline-item">
+                <input
+                  type="text"
+                  class="form-control border border-secondary"
+                  placeholder=""
+                  name="animalAge"
+                  style="width: 300px"
+                />
+              </li>
+            </ul>
+
+            {{! Animal Size  }}
+            <ul class="list-inline">
+              <li class="list-inline-item" style="width: 150px">
+                <p><u>Animal Size:</u></p>
+              </li>
+              <li class="list-inline-item">
+                <input
+                  type="text"
+                  class="form-control border border-secondary"
+                  placeholder=""
+                  name="animalSize"
+                  style="width: 300px"
+                />
+              </li>
+            </ul>
+
+            {{! Animal Description }}
+            <ul class="list-inline">
+              <li class="list-inline-item mb-3" style="width: 150px">
+                <p><u>Description:</u></p>
+              </li>
+              <li class="list-inline-item">
+                <textarea
+                  type="text"
+                  class="form-control border border-secondary"
+                  id="description"
+                  placeholder=""
+                  name="animalDescription"
+                  style="width: 300px; "
+                ></textarea>
+
+              </li>
+            </ul>
+
+            {{! button create }}
+
+            <button type="submit" class="btn btn-success mb-5">
+              Add an animal
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</div>

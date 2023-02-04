@@ -1,0 +1,101 @@
+<div
+  class="container h-100 d-flex justify-content-center align-items-start mt-5"
+>
+  <div class="row">
+
+    {{! col left  }}
+    <div class="col">
+      <h1 class="mb-3">
+        Please contact us!
+        <hr />
+      </h1>
+
+      <div class="contact-form">
+        <div class="form-group mb-3">
+          <label class="control-label col-sm-2" for="fname">First Name:</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="fname"
+              placeholder=""
+              name="fname"
+            />
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label class="control-label col-sm-2" for="name">Last Name:</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder=""
+              name="name"
+            />
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder=""
+              name="email"
+            />
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label class="control-label col-sm-2" for="comment">Message:</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <form action="/contactFormConfirmation" method="get">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    {{! col right  }}
+    <div class="col">
+      <img
+        src="/images/contact-us.jpg
+      "
+        class="img-fluid rounded"
+        alt=""
+        style="height: 500px"
+      />
+    </div>
+
+    {{! footer }}
+
+    <div class="navbar navbar-expand-lg bg-body-tertiary h-100 d-flex mt-3">
+
+      <p class="me-5 ms-3"><img
+          src="/images/email_icon.svg"
+          alt="email-icon"
+          height="20"
+        />
+        <strong> Our Email: </strong>
+        <span class="text-primary"> <u> xxxxxxxxxx@gmail.com </u></span>
+      </p>
+
+      <p class="me-5">
+        <img src="/images/phone_icon.svg" alt="email-icon" height="20" />
+        <strong> Our Phone number : </strong>
+        +33 12 34 56 78
+      </p>
+      <p class="me-5">
+        <img src="/images/location_icon.svg" alt="email-icon" height="20" />
+        <strong> Our address : </strong>
+        xxxxxxxxxxxxxxxxx xxxxx xxxxx</p>
+    </div>
+
+  </div>
+</div>

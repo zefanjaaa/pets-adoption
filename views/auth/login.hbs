@@ -1,0 +1,51 @@
+<div
+  class="container h-100 d-flex justify-content-center align-items-start mt-5"
+>
+  <div class="row">
+
+    {{! col center  }}
+    <div class="col">
+      <h1 class="mb-3">
+        Log In
+        <hr />
+      </h1>
+
+  <!--Form -->
+      <form action="/auth/login" method="POST" style="width: auto">
+        {{errorMessage}}
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example1">Email address</label>
+          <input
+            type="email"
+            id="form2Example1"
+            name="email"
+            class="form-control"
+          />
+
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example2">
+            Password</label>
+          <input
+            type="password"
+            id="form2Example2"
+            name="password"
+            class="form-control"
+          />
+ 
+       
+        </div> </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4 mt- 4">Log In</button>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
