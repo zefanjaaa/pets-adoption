@@ -1,8 +1,10 @@
 {{! this page renders a result of the research }}
 
-<div class="container d-flex justify-content-center align-items-center">
+<div class="container-fluid d-flex justify-content-center align-items-center">
   {{! Page Title }}
-  <div class="container">
+  <div class="container-fluid">
+
+    {{! row with buttons }}
     <div class="row">
       <div class="col"> <h1>Here you can see all our animals</h1> </div>
       <div class="col d-flex justify-content-end mt-3 me-3">
@@ -19,6 +21,7 @@
       <hr />
     </div>
 
+    {{! row with animals }}
     {{!All animals }}
     <div class="row">
       {{#each result}}
