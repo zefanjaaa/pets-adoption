@@ -44,7 +44,7 @@ router.get("/search/animalsfilters", (req, res) => {
 });
 
 //display All Animals
-router.get("/pets/animalall", (req, res) => {
+router.get("/pets/animalAll", (req, res) => {
   Pets.find()
     .populate("user_id")
     .then((result) => {
