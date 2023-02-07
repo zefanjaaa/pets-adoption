@@ -48,7 +48,7 @@ router.get("/pets/animalall", (req, res) => {
   Pets.find()
     .populate("user_id")
     .then((result) => {
-      res.render("pets/animalall", { result });
+      res.render("pets/animalAll", { result });
     })
     .catch((error) => {
       console.log("there is an error", error);
